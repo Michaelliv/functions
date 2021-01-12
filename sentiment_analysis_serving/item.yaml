@@ -1,0 +1,25 @@
+apiVersion: v1
+categories:
+- serving
+- NLP
+- BERT
+- sentiment analysis
+description: BERT based sentiment classification model
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: null
+  image: null
+  kind: remote
+  requierments: []
+icon: ''
+labels:
+  author: roye
+  framework: pytorch
+maintainers: []
+mlrunVersion: ''
+name: sentiment-analysis-serving
+platformVersion: ''
+url: ''
+version: ''

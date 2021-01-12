@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- ops
+description: Send Slack notification
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: slack_notify
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: mdl
+maintainers: []
+mlrunVersion: ''
+name: slack-notify
+platformVersion: ''
+url: ''
+version: ''

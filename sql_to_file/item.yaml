@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- data-prep
+description: SQL To File - Ingest data using SQL query
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: sql_to_file
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: adih
+maintainers: []
+mlrunVersion: ''
+name: sql-to-file
+platformVersion: ''
+url: ''
+version: ''

@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- analysis
+description: describe and visualizes dataset stats
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: summarize
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+maintainers: []
+mlrunVersion: ''
+name: describe-dask
+platformVersion: ''
+url: ''
+version: ''

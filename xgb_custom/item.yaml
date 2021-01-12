@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- analysis
+description: train an xgboost model using the low-level api
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: fit
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+maintainers: []
+mlrunVersion: ''
+name: xgb-custom
+platformVersion: ''
+url: ''
+version: ''

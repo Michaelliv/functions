@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- ml
+- test
+description: test cox proportional hazards model
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: cox_test
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: survival
+maintainers: []
+mlrunVersion: ''
+name: coxph-test
+platformVersion: ''
+url: ''
+version: ''

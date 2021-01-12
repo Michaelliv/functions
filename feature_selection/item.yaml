@@ -1,0 +1,22 @@
+apiVersion: v1
+categories:
+- data-prep
+- ml
+description: Select features through multiple Statistical and Model filters
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: feature_selection
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: orz
+maintainers: []
+mlrunVersion: ''
+name: feature-selection
+platformVersion: ''
+url: ''
+version: ''

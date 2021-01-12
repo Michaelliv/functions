@@ -1,0 +1,19 @@
+apiVersion: v1
+categories: []
+description: ''
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: describe_spark
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels: {}
+maintainers: []
+mlrunVersion: ''
+name: describe-spark
+platformVersion: ''
+url: ''
+version: ''

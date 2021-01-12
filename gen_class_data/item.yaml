@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- simulators
+- ml
+description: simulate classification data using scikit-learn
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: gen_class_data
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: sklearn
+maintainers: []
+mlrunVersion: ''
+name: gen-class-data
+platformVersion: ''
+url: ''
+version: ''

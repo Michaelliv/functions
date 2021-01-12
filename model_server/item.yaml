@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- serving
+- ml
+description: generic sklearn model server
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: null
+  image: null
+  kind: remote
+  requierments: []
+icon: ''
+labels:
+  author: yaronh
+  framework: sklearn
+maintainers: []
+mlrunVersion: ''
+name: model-server
+platformVersion: ''
+url: ''
+version: ''

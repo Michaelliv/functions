@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- analysis
+description: estimate feature importances using permutations
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: permutation_importances
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+maintainers: []
+mlrunVersion: ''
+name: feature-perms
+platformVersion: ''
+url: ''
+version: ''

@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- ml
+- test
+description: test a classifier using held-out or new data
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: xgb_test
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: xgboost
+maintainers: []
+mlrunVersion: ''
+name: xgb-test
+platformVersion: ''
+url: ''
+version: ''

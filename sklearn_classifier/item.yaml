@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- ml
+- training
+description: train any classifier using scikit-learn's API
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: train_model
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: sklearn
+maintainers: []
+mlrunVersion: ''
+name: sklearn-classifier
+platformVersion: ''
+url: ''
+version: ''

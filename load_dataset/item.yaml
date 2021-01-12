@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- data-source
+- ml
+description: load a toy dataset from scikit-learn
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: load_dataset
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: sklearn
+maintainers: []
+mlrunVersion: ''
+name: load-dataset
+platformVersion: ''
+url: ''
+version: ''

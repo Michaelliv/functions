@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- training
+- ml
+description: cox proportional hazards, kaplan meier plots
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: train_model
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+  framework: survival
+maintainers: []
+mlrunVersion: ''
+name: coxph-trainer
+platformVersion: ''
+url: ''
+version: ''

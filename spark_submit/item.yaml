@@ -1,0 +1,19 @@
+apiVersion: v1
+categories: []
+description: ''
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: spark_submit
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels: {}
+maintainers: []
+mlrunVersion: ''
+name: spark-submit
+platformVersion: ''
+url: ''
+version: ''

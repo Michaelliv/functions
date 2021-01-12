@@ -1,0 +1,22 @@
+apiVersion: v1
+categories:
+- data-movement
+- utils
+description: load dask cluster with data
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: load_dask
+  image: null
+  kind: dask
+  requierments: []
+icon: ''
+labels:
+  author: yjb
+maintainers: []
+mlrunVersion: ''
+name: load-dask
+platformVersion: ''
+url: ''
+version: ''

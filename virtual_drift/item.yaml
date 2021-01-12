@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- ml
+- serve
+- concept-drift
+description: Compute drift magnitude between Time-Samples T and U
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: drift_magnitude
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: orz
+maintainers: []
+mlrunVersion: ''
+name: virtual-drift
+platformVersion: ''
+url: ''
+version: ''

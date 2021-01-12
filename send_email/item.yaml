@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- notifications
+description: Send Email messages through SMTP server
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: send_email
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: saarc
+maintainers: []
+mlrunVersion: ''
+name: send-email
+platformVersion: ''
+url: ''
+version: ''

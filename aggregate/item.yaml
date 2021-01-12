@@ -1,0 +1,21 @@
+apiVersion: v1
+categories:
+- data-prep
+description: Rolling aggregation over Metrics and Lables according to specifications
+doc: ''
+example: ''
+function:
+  filename: function.py
+  handler: aggregate
+  image: null
+  kind: job
+  requierments: []
+icon: ''
+labels:
+  author: orz
+maintainers: []
+mlrunVersion: ''
+name: aggregate
+platformVersion: ''
+url: ''
+version: ''
