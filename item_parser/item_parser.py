@@ -106,9 +106,9 @@ def function_to_item(function_yaml: Path) -> Item:
         labels=model.metadata.labels or {},
         function=Function(
             filename=locate_py_file(function_yaml.parent) or "",
-            handler=model.spec.default_handler,
+            handler=model.spec.default_handler or "",
             requierments=[],
-            kind=model.kind,
+            kind=model.kind or "",
             image=get_image(model),
         ),
         maintainers=[],
@@ -132,5 +132,5 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     item = process_item(
-#         Path("/home/michaell/projects/functions/aggregate/function.yaml")
+#         Path("/home/michaell/projects/functions/bert_embeddings/function.yaml")
 #     )

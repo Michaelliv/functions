@@ -8,7 +8,7 @@ doc: ''
 example: ''
 function:
   filename: function.py
-  handler: null
+  handler: ''
   image: ''
   kind: remote
   requierments: []

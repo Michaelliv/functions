@@ -5,7 +5,7 @@ doc: ''
 example: ''
 function:
   filename: function.py
-  handler: null
+  handler: ''
   image: mlrun/ml-models
   kind: dask
   requierments: []
