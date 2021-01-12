@@ -4,12 +4,6 @@ categories:
 description: Nuclio based - Cron scheduler for running your MLRun projects
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: orz
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: project-runner
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

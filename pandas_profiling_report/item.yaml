@@ -4,12 +4,6 @@ categories:
 description: Create Pandas Profiling Report from Dataset
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: pandas_profiling_report
-  image: mlrun/mlrun
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: nicks
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: pandas-profiling-report
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: pandas_profiling_report
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
 url: ''
 version: ''

@@ -8,7 +8,7 @@ import yaml
 
 
 @dataclass
-class Function:
+class Spec:
     filename: str = ""
     handler: str = ""
     requierments: List[str] = field(default_factory=list)
@@ -36,7 +36,7 @@ class Item:
     url: str = ""
     categories: List[str] = field(default_factory=list)
     labels: Dict[str, Union[str, int, float]] = field(default_factory=dict)
-    function: Function = field(default_factory=Function)
+    spec: Spec = field(default_factory=Spec)
     maintainers: List[Maintainer] = field(default_factory=list)
 
 
@@ -104,7 +104,7 @@ def function_to_item(function_yaml: Path) -> Item:
         url="",
         categories=model.metadata.categories or [],
         labels=model.metadata.labels or {},
-        function=Function(
+        spec=Spec(
             filename=locate_py_file(function_yaml.parent) or "",
             handler=model.spec.default_handler or "",
             requierments=[],

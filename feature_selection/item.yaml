@@ -5,12 +5,6 @@ categories:
 description: Select features through multiple Statistical and Model filters
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: feature_selection
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: orz
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: feature-selection
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: feature_selection
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

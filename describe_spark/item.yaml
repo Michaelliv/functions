@@ -3,17 +3,17 @@ categories: []
 description: ''
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: describe_spark
-  image: iguazio/shell:3.0_b5565_20201026062233_wsdf
-  kind: job
-  requierments: []
 icon: ''
 labels: {}
 maintainers: []
 mlrunVersion: ''
 name: describe-spark
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: describe_spark
+  image: iguazio/shell:3.0_b5565_20201026062233_wsdf
+  kind: job
+  requierments: []
 url: ''
 version: ''

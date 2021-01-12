@@ -5,12 +5,6 @@ categories:
 description: test a classifier using held-out or new data
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: xgb_test
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yjb
@@ -19,5 +13,11 @@ maintainers: []
 mlrunVersion: ''
 name: xgb-test
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: xgb_test
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

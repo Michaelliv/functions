@@ -5,12 +5,6 @@ categories:
 description: add comments to github pull requests
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: run_summary_comment
-  image: mlrun/mlrun
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yaronh
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: github-utils
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: run_summary_comment
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
 url: ''
 version: ''

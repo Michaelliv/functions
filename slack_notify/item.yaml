@@ -4,12 +4,6 @@ categories:
 description: Send Slack notification
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: slack_notify
-  image: python:3.6-jessie
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: mdl
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: slack-notify
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: slack_notify
+  image: python:3.6-jessie
+  kind: job
+  requierments: []
 url: ''
 version: ''

@@ -4,12 +4,6 @@ categories:
 description: estimate feature importances using permutations
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: permutation_importances
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yjb
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: feature-perms
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: permutation_importances
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

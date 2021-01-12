@@ -5,12 +5,6 @@ categories:
 description: churn classification and predictor
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: yashab
@@ -19,5 +13,11 @@ maintainers: []
 mlrunVersion: ''
 name: churn-server
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

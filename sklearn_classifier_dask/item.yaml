@@ -3,17 +3,17 @@ categories: []
 description: ''
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: mlrun/ml-models
-  kind: dask
-  requierments: []
 icon: ''
 labels: {}
 maintainers: []
 mlrunVersion: ''
 name: dask_init
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: mlrun/ml-models
+  kind: dask
+  requierments: []
 url: ''
 version: ''

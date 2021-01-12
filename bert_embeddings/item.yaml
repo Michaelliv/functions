@@ -6,12 +6,6 @@ categories:
 description: Get BERT based embeddings for given text
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: roye
@@ -20,5 +14,11 @@ maintainers: []
 mlrunVersion: ''
 name: bert-embeddings
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

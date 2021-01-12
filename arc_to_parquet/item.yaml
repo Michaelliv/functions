@@ -5,12 +5,6 @@ categories:
 description: retrieve remote archive, open and save as parquet
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: arc_to_parquet
-  image: mlrun/ml-base
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yjb
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: arc-to-parquet
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: arc_to_parquet
+  image: mlrun/ml-base
+  kind: job
+  requierments: []
 url: ''
 version: ''

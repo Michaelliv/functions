@@ -4,12 +4,6 @@ categories:
 description: describe and visualizes dataset stats
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: summarize
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yjb
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: describe
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: summarize
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

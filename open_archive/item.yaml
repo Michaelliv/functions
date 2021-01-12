@@ -5,12 +5,6 @@ categories:
 description: Open a file/object archive into a target directory
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: open_archive
-  image: mlrun/mlrun
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yaronh
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: open-archive
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: open_archive
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
 url: ''
 version: ''

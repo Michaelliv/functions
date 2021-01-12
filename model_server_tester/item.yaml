@@ -5,12 +5,6 @@ categories:
 description: test model servers
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: model_server_tester
-  image: mlrun/mlrun
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yaronh
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: model-server-tester
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: model_server_tester
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
 url: ''
 version: ''

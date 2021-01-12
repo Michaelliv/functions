@@ -5,12 +5,6 @@ categories:
 description: xgboost test data classification server
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: yaronh
@@ -19,5 +13,11 @@ maintainers: []
 mlrunVersion: ''
 name: xgb-serving
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

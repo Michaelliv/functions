@@ -4,12 +4,6 @@ categories:
 description: Rolling aggregation over Metrics and Lables according to specifications
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: aggregate
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: orz
@@ -17,5 +11,11 @@ maintainers: []
 mlrunVersion: ''
 name: aggregate
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: aggregate
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

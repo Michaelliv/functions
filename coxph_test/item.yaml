@@ -5,12 +5,6 @@ categories:
 description: test cox proportional hazards model
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: cox_test
-  image: mlrun/ml-models
-  kind: job
-  requierments: []
 icon: ''
 labels:
   author: yjb
@@ -19,5 +13,11 @@ maintainers: []
 mlrunVersion: ''
 name: coxph-test
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: cox_test
+  image: mlrun/ml-models
+  kind: job
+  requierments: []
 url: ''
 version: ''

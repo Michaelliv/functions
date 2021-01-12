@@ -6,12 +6,6 @@ description: Deploy a streaming Concept Drift detector on a labeled stream. the 
   part of the concept_drift function
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: ''
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: orz
@@ -20,5 +14,11 @@ maintainers: []
 mlrunVersion: ''
 name: concept-drift-streaming
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: ''
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

@@ -5,12 +5,6 @@ categories:
 description: Saves a stream to Parquet and can lunch drift detection task on it
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: handler
-  image: ''
-  kind: remote
-  requierments: []
 icon: ''
 labels:
   author: orz
@@ -18,5 +12,11 @@ maintainers: []
 mlrunVersion: ''
 name: stream-to-parquet
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: handler
+  image: ''
+  kind: remote
+  requierments: []
 url: ''
 version: ''

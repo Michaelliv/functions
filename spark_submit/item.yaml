@@ -3,17 +3,17 @@ categories: []
 description: ''
 doc: ''
 example: ''
-function:
-  filename: function.py
-  handler: spark_submit
-  image: mlrun/mlrun
-  kind: job
-  requierments: []
 icon: ''
 labels: {}
 maintainers: []
 mlrunVersion: ''
 name: spark-submit
 platformVersion: ''
+spec:
+  filename: function.py
+  handler: spark_submit
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
 url: ''
 version: ''
