@@ -6,7 +6,7 @@ example: ''
 function:
   filename: function.py
   handler: spark_submit
-  image: null
+  image: mlrun/mlrun
   kind: job
   requierments: []
 icon: ''

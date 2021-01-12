@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: model_server_tester
-  image: null
+  image: mlrun/mlrun
   kind: job
   requierments: []
 icon: ''

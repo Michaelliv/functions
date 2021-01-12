@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: run_summary_comment
-  image: null
+  image: mlrun/mlrun
   kind: job
   requierments: []
 icon: ''

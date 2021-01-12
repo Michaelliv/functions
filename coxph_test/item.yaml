@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: cox_test
-  image: null
+  image: mlrun/ml-models
   kind: job
   requierments: []
 icon: ''

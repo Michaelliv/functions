@@ -6,7 +6,7 @@ example: ''
 function:
   filename: function.py
   handler: null
-  image: null
+  image: mlrun/ml-models
   kind: dask
   requierments: []
 icon: ''

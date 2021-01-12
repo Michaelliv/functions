@@ -9,7 +9,7 @@ example: ''
 function:
   filename: function.py
   handler: null
-  image: null
+  image: ''
   kind: remote
   requierments: []
 icon: ''

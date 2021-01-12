@@ -7,7 +7,7 @@ example: ''
 function:
   filename: function.py
   handler: pandas_profiling_report
-  image: null
+  image: mlrun/mlrun
   kind: job
   requierments: []
 icon: ''

@@ -7,7 +7,7 @@ example: ''
 function:
   filename: function.py
   handler: sql_to_file
-  image: mlrun/mlrun
+  image: ''
   kind: job
   requierments: []
 icon: ''

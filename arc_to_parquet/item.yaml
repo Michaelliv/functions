@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: arc_to_parquet
-  image: null
+  image: mlrun/ml-base
   kind: job
   requierments: []
 icon: ''

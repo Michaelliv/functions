@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: open_archive
-  image: null
+  image: mlrun/mlrun
   kind: job
   requierments: []
 icon: ''

@@ -7,7 +7,7 @@ example: ''
 function:
   filename: function.py
   handler: slack_notify
-  image: null
+  image: python:3.6-jessie
   kind: job
   requierments: []
 icon: ''

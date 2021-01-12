@@ -8,7 +8,7 @@ example: ''
 function:
   filename: function.py
   handler: load_dask
-  image: null
+  image: mlrun/ml-models
   kind: dask
   requierments: []
 icon: ''

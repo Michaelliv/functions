@@ -80,6 +80,16 @@ def iter_relevat_directories(root_path: Path) -> Generator[Path, None, None]:
         yield dir
 
 
+def get_image(model):
+    try:
+        return model.spec.image
+    except:
+        try:
+            return model.spec.build.base_image
+        except:
+            return ""
+
+
 def function_to_item(function_yaml: Path) -> Item:
     model = import_function(str(function_yaml.absolute()))
     item = Item(
@@ -99,7 +109,7 @@ def function_to_item(function_yaml: Path) -> Item:
             handler=model.spec.default_handler,
             requierments=[],
             kind=model.kind,
-            image=model.spec.build.base_image,
+            image=get_image(model),
         ),
         maintainers=[],
     )
@@ -118,3 +128,9 @@ if __name__ == "__main__":
         item = process_item(dir / "function.yaml")
         with open(dir / "item.yaml", "w") as f:
             yaml.dump(item, f)
+
+
+# if __name__ == "__main__":
+#     item = process_item(
+#         Path("/home/michaell/projects/functions/aggregate/function.yaml")
+#     )
