@@ -1,0 +1,23 @@
+apiVersion: v1
+categories:
+- ml
+- test
+description: test v2 model servers
+doc: ''
+example: ''
+generationDate: '2021-01-18 12:19:25.810125'
+icon: ''
+labels:
+  author: yaronh
+maintainers: []
+mlrunVersion: ''
+name: v2-model-tester
+platformVersion: ''
+spec:
+  filename: function.py
+  handler: model_server_tester
+  image: mlrun/mlrun
+  kind: job
+  requierments: []
+url: ''
+version: ''
