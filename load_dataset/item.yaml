@@ -5,7 +5,7 @@ categories:
 description: load a toy dataset from scikit-learn
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.743913'
+generationDate: '2021-01-20 08:21:10.968300'
 icon: ''
 labels:
   author: yjb
@@ -21,4 +21,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

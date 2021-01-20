@@ -5,7 +5,7 @@ categories:
 description: Select features through multiple Statistical and Model filters
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.637597'
+generationDate: '2021-01-20 08:21:10.938327'
 icon: ''
 labels:
   author: orz
@@ -20,4 +20,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

@@ -6,7 +6,7 @@ categories:
 description: Compute drift magnitude between Time-Samples T and U
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.056647'
+generationDate: '2021-01-20 08:21:11.052370'
 icon: ''
 labels:
   author: orz
@@ -21,4 +21,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

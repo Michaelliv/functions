@@ -4,7 +4,7 @@ categories:
 description: estimate feature importances using permutations
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.530395'
+generationDate: '2021-01-20 08:21:11.139389'
 icon: ''
 labels:
   author: yjb
@@ -19,4 +19,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

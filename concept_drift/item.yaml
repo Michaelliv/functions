@@ -5,7 +5,7 @@ categories:
 description: Deploy a streaming Concept Drift detector on a labeled stream
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.620964'
+generationDate: '2021-01-20 08:21:10.637560'
 icon: ''
 labels:
   author: orz
@@ -21,4 +21,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

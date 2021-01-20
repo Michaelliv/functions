@@ -4,7 +4,7 @@ categories:
 description: Send Slack notification
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.107400'
+generationDate: '2021-01-20 08:21:11.064468'
 icon: ''
 labels:
   author: mdl
@@ -19,4 +19,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

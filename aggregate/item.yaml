@@ -4,7 +4,7 @@ categories:
 description: Rolling aggregation over Metrics and Lables according to specifications
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.686298'
+generationDate: '2021-01-20 08:21:10.653521'
 icon: ''
 labels:
   author: orz
@@ -19,4 +19,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

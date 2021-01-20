@@ -5,7 +5,7 @@ categories:
 description: test cox proportional hazards model
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.222237'
+generationDate: '2021-01-20 08:21:10.783079'
 icon: ''
 labels:
   author: yjb
@@ -21,4 +21,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

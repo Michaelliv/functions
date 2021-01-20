@@ -4,7 +4,7 @@ categories:
 description: Send Email messages through SMTP server
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.908121'
+generationDate: '2021-01-20 08:21:10.707833'
 icon: ''
 labels:
   author: saarc
@@ -19,4 +19,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

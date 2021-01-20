@@ -5,7 +5,7 @@ categories:
 description: add comments to github pull requests
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.875435'
+generationDate: '2021-01-20 08:21:10.699781'
 icon: ''
 labels:
   author: yaronh
@@ -20,4 +20,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

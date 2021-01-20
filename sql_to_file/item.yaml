@@ -4,7 +4,7 @@ categories:
 description: SQL To File - Ingest data using SQL query
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.562605'
+generationDate: '2021-01-20 08:21:11.145386'
 icon: ''
 labels:
   author: adih
@@ -19,4 +19,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

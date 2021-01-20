@@ -5,7 +5,7 @@ categories:
 description: churn classification and predictor
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.843260'
+generationDate: '2021-01-20 08:21:10.692151'
 icon: ''
 labels:
   author: yashab
@@ -21,4 +21,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'

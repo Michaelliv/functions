@@ -7,7 +7,7 @@ categories:
 description: BERT based sentiment classification model
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.709120'
+generationDate: '2021-01-20 08:21:10.958710'
 icon: ''
 labels:
   author: roye
@@ -23,4 +23,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'

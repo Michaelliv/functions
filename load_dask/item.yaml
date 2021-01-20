@@ -5,7 +5,7 @@ categories:
 description: load dask cluster with data
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.148277'
+generationDate: '2021-01-20 08:21:11.074207'
 icon: ''
 labels:
   author: yjb
@@ -20,4 +20,4 @@ spec:
   kind: dask
   requierments: []
 url: ''
-version: ''
+version: '0.1'

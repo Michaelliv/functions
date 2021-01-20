@@ -5,7 +5,7 @@ categories:
 description: tf1 image classification server
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.882289'
+generationDate: '2021-01-20 08:21:11.005281'
 icon: ''
 labels:
   author: yaronh
@@ -20,4 +20,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'

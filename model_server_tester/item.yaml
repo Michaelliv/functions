@@ -5,7 +5,7 @@ categories:
 description: test model servers
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:26.472840'
+generationDate: '2021-01-20 08:21:11.128608'
 icon: ''
 labels:
   author: yaronh
@@ -20,4 +20,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

@@ -5,7 +5,7 @@ categories:
 description: xgboost test data classification server
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.910632'
+generationDate: '2021-01-20 08:21:11.012198'
 icon: ''
 labels:
   author: yaronh
@@ -21,4 +21,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'

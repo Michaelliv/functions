@@ -6,7 +6,7 @@ categories:
 description: train multiple model types using xgboost
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.564798'
+generationDate: '2021-01-20 08:21:10.914041'
 icon: ''
 labels:
   author: yjb
@@ -22,4 +22,4 @@ spec:
   kind: job
   requierments: []
 url: ''
-version: ''
+version: '0.1'

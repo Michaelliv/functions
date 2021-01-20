@@ -5,7 +5,7 @@ categories:
 description: generic sklearn model server
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:25.773184'
+generationDate: '2021-01-20 08:21:10.976220'
 icon: ''
 labels:
   author: yaronh
@@ -21,4 +21,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'

@@ -4,7 +4,7 @@ categories:
 description: Nuclio based - Cron scheduler for running your MLRun projects
 doc: ''
 example: ''
-generationDate: '2021-01-18 12:19:24.772033'
+generationDate: '2021-01-20 08:21:10.675072'
 icon: ''
 labels:
   author: orz
@@ -19,4 +19,4 @@ spec:
   kind: remote
   requierments: []
 url: ''
-version: ''
+version: '0.1'
