@@ -25,13 +25,13 @@ jobs:
       - name: Checkout Marketplace
         uses: actions/checkout@v2
         with:
-          repository: Michaelliv/marketplace-docs.git
+          repository: Michaelliv/marketplace-docs
           path: marketplace
       # Docs building tool
       - name: Checkout Collagen
         uses: actions/checkout@v2
         with:
-          repository: Michaelliv/collagen.git
+          repository: Michaelliv/collagen
           path: collagen
       # Log git directories
       - name: Show information about directories
