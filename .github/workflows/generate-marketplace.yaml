@@ -47,9 +47,18 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+      - name: Cache pip
+        id: cache-pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
       # Install tool dependencies
       - name: Install Collagen's requirements.txt
         uses: py-actions/py-dependency-install@v2
+        if: steps.cache-pip.outputs.cache-hit != 'true'
         with:
           update-pip: "true"
           path: "collagen/requirements.txt"
