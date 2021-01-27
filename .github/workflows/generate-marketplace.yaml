@@ -1,0 +1,76 @@
+name: Marketplace generator
+
+on:
+  # Trigger the workflow on push or pull request, only for the main branch
+  push:
+    branches:
+      - marketplace
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  generate-marketplace:
+    # Name the Job
+    name: Generate marketplace
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Source
+      - name: Checkout current repo
+        uses: actions/checkout@v2
+        with:
+          path: items
+      # Target
+      - name: Checkout Marketplace
+        uses: actions/checkout@v2
+        with:
+          repository: https://github.com/Michaelliv/marketplace-docs.git
+          path: marketplace
+      # Docs building tool
+      - name: Checkout Collagen
+        uses: actions/checkout@v2
+        with:
+          repository: https://github.com/Michaelliv/collagen.git
+          path: collagen
+      # Log git directories
+      - name: Show information about directories
+        run: |
+          echo "Listing items..."
+          ll items
+          echo "Listing marketplace..."
+          ll marketplace
+          echo "Listing collagen..."
+          ll collagen
+      # Install python
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      # Install tool dependencies
+      - name: Install Collagen's requirements.txt
+        uses: py-actions/py-dependency-install@v2
+        with:
+          update-pip: "true"
+          path: "collagen/requirements.txt"
+      # Execute collagen
+      - name: Execute py script
+        run: |
+          python collagen/run.py ./items ./marketplace
+      # Create branch
+      - name: Create branch with new
+        env:
+          GITHUB_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
+        run: |
+          cd marketplace
+
+          git config user.name "github-ci"
+          #git config user.email "dev@example.com"
+
+          branch_name = marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
+
+          git checkout -b $branch_name
+
+          git add -A && git commit -m "Your Message"
+
+          git push --set-upstream origin $branch_name
