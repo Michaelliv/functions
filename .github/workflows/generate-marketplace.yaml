@@ -65,7 +65,7 @@ jobs:
       # Execute collagen
       - name: Execute collagen
         run: |
-          python collagen/main.py items marketplace
+          python collagen/main.py -s ./items -t ./marketplace
       # Create branch
       - name: Create branch with new
         env:
