@@ -37,11 +37,11 @@ jobs:
       - name: Show information about directories
         run: |
           echo "Listing items..."
-          ll items
+          ls -l items
           echo "Listing marketplace..."
-          ll marketplace
+          ls -l marketplace
           echo "Listing collagen..."
-          ll collagen
+          ls -l collagen
       # Install python
       - name: Install python
         uses: actions/setup-python@v2
