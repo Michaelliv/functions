@@ -25,7 +25,7 @@ jobs:
       - name: Checkout Marketplace
         uses: actions/checkout@v2
         with:
-          repository: Michaelliv/marketplace-docs
+          repository: Michaelliv/funcitons-marketplace
           path: marketplace
       # Docs building tool
       - name: Checkout Collagen
