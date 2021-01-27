@@ -63,9 +63,9 @@ jobs:
           update-pip: "true"
           path: "collagen/requirements.txt"
       # Execute collagen
-      - name: Execute py script
+      - name: Execute collagen
         run: |
-          python collagen/main.py ./items ./marketplace
+          python collagen/main.py items marketplace
       # Create branch
       - name: Create branch with new
         env:
