@@ -36,11 +36,11 @@ jobs:
       # Log git directories
       - name: Show information about directories
         run: |
-          echo "Listing items..."
+          echo " **************************** Listing items **************************** "
           ls -l items
-          echo "Listing marketplace..."
+          echo " **************************** Listing marketplace **************************** "
           ls -l marketplace
-          echo "Listing collagen..."
+          echo " **************************** Listing collagen **************************** "
           ls -l collagen
       # Install python
       - name: Install python
@@ -56,7 +56,7 @@ jobs:
       # Execute collagen
       - name: Execute py script
         run: |
-          python collagen/run.py ./items ./marketplace
+          python collagen/main.py ./items ./marketplace
       # Create branch
       - name: Create branch with new
         env:
