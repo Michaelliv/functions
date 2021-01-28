@@ -73,16 +73,16 @@ jobs:
           USERNAME: Michaelliv
           REPO_PATH: funcitons-marketplace
         run: |
-          #BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
-          BRANCH_NAME=marketplace-doc-gen
+          cd marketplace
+
+          BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
+
           echo "Pushing to branch $BRANCH_NAME";
 
           [ -z "${MARKETPLACE_ACCESS_TOKEN}" ] && {
               echo 'Missing input "MARKETPLACE_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}".';
               exit 1;
           };
-
-          cd marketplace
 
           git config --local user.name "github-worflow[bot]"
 
