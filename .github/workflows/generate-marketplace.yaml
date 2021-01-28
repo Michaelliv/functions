@@ -25,6 +25,7 @@ jobs:
       - name: Checkout Marketplace
         uses: actions/checkout@v2
         with:
+          persist-credentials: false
           repository: Michaelliv/funcitons-marketplace
           path: marketplace
       # Docs building tool
@@ -69,11 +70,12 @@ jobs:
       - name: Create branch with new
         env:
           GITHUB_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
+          USERNAME: Michaelliv
+          REPO_PATH: funcitons-marketplace
         run: |
           cd marketplace
 
-          git config user.name "github-ci"
-          #git config user.email "dev@example.com"
+          git config --local user.name "github-worflow[bot]"
 
           BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
 
@@ -81,4 +83,4 @@ jobs:
 
           git add -A && git commit -m "Your Message"
 
-          git push --set-upstream origin $BRANCH_NAME
+          git push git push https://$USERNAME:$GITHUB_TOKEN@github.com/$REPO_PATH.git $BRANCH_NAME
