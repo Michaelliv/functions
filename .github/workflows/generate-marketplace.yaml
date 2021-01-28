@@ -73,8 +73,8 @@ jobs:
           USERNAME: Michaelliv
           REPO_PATH: funcitons-marketplace
         run: |
-          BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
-
+          #BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
+          BRANCH_NAME=marketplace-doc-gen
           echo "Pushing to branch $BRANCH_NAME";
 
           [ -z "${MARKETPLACE_ACCESS_TOKEN}" ] && {
