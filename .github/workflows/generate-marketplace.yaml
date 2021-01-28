@@ -67,7 +67,7 @@ jobs:
         run: |
           python collagen/main.py -s ./items/ -t ./marketplace/
       # Create branch
-      - name: Create branch with new
+      - name: Create branch with new marketplace version
         env:
           MARKETPLACE_ACCESS_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
           USERNAME: Michaelliv
@@ -90,8 +90,8 @@ jobs:
 
           git add -A && git commit -m "Your Message"
 
-          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$REPO_PATH.git
+          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$USERNAME/$REPO_PATH.git
 
-          echo $remote
+          echo $REMOTE
 
           git push $REMOTE $BRANCH_NAME
