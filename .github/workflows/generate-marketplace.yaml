@@ -90,4 +90,6 @@ jobs:
 
           git add -A && git commit -m "Your Message"
 
-          git push https://$USERNAME:MARKETPLACE_ACCESS_TOKEN@github.com/$REPO_PATH.git $BRANCH_NAME
+          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$REPO_PATH.git
+
+          git push $REMOTE $BRANCH_NAME
