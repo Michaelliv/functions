@@ -69,7 +69,7 @@ jobs:
       # Create branch
       - name: Create branch with new marketplace version
         env:
-          MARKETPLACE_ACCESS_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
           USERNAME: Michaelliv
           REPO_PATH: funcitons-marketplace
         run: |
@@ -77,12 +77,12 @@ jobs:
 
           COMMIT_SHA=$(git rev-parse --short "$GITHUB_SHA")
           BRANCH_NAME=marketplace-doc-gen-$COMMIT_SHA
-          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$USERNAME/$REPO_PATH.git
+          REMOTE=https://$USERNAME:$GITHUB_TOKEN@github.com/$USERNAME/$REPO_PATH.git
 
           echo "Validating environment params...";
 
-          [ -z "${MARKETPLACE_ACCESS_TOKEN}" ] && {
-              echo 'Missing input "MARKETPLACE_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}".';
+          [ -z "${GITHUB_TOKEN}" ] && {
+              echo 'Missing input "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}".';
               exit 1;
           };
 
@@ -96,9 +96,6 @@ jobs:
 
           echo "Pushing [$BRANCH_NAME] to remote [$REMOTE]"
           git push $REMOTE $BRANCH_NAME
-
-          echo "Authenticating gh cli..."
-          gh auth login --with-token $MARKETPLACE_ACCESS_TOKEN
 
           echo "Submiting pull request..."
           gh pr create --title "Marketplace update from $BRANCH_NAME" --fill --base master --head $BRANCH_NAME --repo $USERNAME/$REPO_PATH
