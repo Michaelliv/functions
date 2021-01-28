@@ -72,6 +72,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
           USERNAME: Michaelliv
           REPO_PATH: funcitons-marketplace
+          BASE_BRANCH: main
         run: |
           cd marketplace
 
@@ -98,4 +99,4 @@ jobs:
           git push $REMOTE $BRANCH_NAME
 
           echo "Submiting pull request..."
-          gh pr create --title "Marketplace update from $BRANCH_NAME" --body "github-workflow" --base master --head $BRANCH_NAME --repo $USERNAME/$REPO_PATH
+          gh pr create --title "Marketplace update from $BRANCH_NAME" --body "github-workflow" --base $BASE_BRANCH --head $BRANCH_NAME --repo $USERNAME/$REPO_PATH
