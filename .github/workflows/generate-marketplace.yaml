@@ -75,10 +75,10 @@ jobs:
           git config user.name "github-ci"
           #git config user.email "dev@example.com"
 
-          branch_name = marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
+          BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
 
-          git checkout -b $branch_name
+          git checkout -b $BRANCH_NAME
 
           git add -A && git commit -m "Your Message"
 
-          git push --set-upstream origin $branch_name
+          git push --set-upstream origin $BRANCH_NAME
