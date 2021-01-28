@@ -75,9 +75,11 @@ jobs:
         run: |
           cd marketplace
 
-          BRANCH_NAME=marketplace-doc-gen-$(git rev-parse --short "$GITHUB_SHA")
+          COMMIT_SHA=$(git rev-parse --short "$GITHUB_SHA")
+          BRANCH_NAME=marketplace-doc-gen-$COMMIT_SHA
+          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$USERNAME/$REPO_PATH.git
 
-          echo "Pushing to branch $BRANCH_NAME";
+          echo "Validating environment params...";
 
           [ -z "${MARKETPLACE_ACCESS_TOKEN}" ] && {
               echo 'Missing input "MARKETPLACE_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}".';
@@ -86,12 +88,17 @@ jobs:
 
           git config --local user.name "github-worflow[bot]"
 
+          echo "Checking out [$BRANCH_NAME]..."
           git checkout -b $BRANCH_NAME
 
-          git add -A && git commit -m "Your Message"
+          echo "Commiting changes..."
+          git add -A && git commit -m "Automated generating from $COMMIT_SHA"
 
-          REMOTE=https://$USERNAME:$MARKETPLACE_ACCESS_TOKEN@github.com/$USERNAME/$REPO_PATH.git
-
-          echo $REMOTE
-
+          echo "Pushing [$BRANCH_NAME] to remote [$REMOTE]"
           git push $REMOTE $BRANCH_NAME
+
+          echo "Authenticating gh cli..."
+          gh auth login --with-token $MARKETPLACE_ACCESS_TOKEN
+
+          echo "Submiting pull request..."
+          gh pr create --title "Marketplace update from $BRANCH_NAME" --fill --base master --head $BRANCH_NAME --repo $USERNAME/$REPO_PATH
