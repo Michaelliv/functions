@@ -1,10 +1,10 @@
-from optparse import OptionParser
 from pathlib import Path
 from typing import Optional
 
 import click
 from mlrun import code_to_function
 from yaml import full_load
+import os
 
 
 @click.command()
@@ -22,6 +22,9 @@ def item_to_function(item_path: str, output_path: Optional[str] = None):
             raise FileNotFoundError(f"{item_path} does not contain a item.yaml file")
     elif not item_path.exists():
         raise FileNotFoundError(f"{item_path} not found")
+
+    item_dir = item_path.parent
+    os.chdir(item_dir)
 
     item_yaml = full_load(open(item_path, "r"))
 

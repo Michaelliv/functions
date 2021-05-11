@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 from transformers import BertModel, BertTokenizer
-import mlrun
 from mlrun.runtimes import nuclio_init_hook
+from mlrun.serving import V2ModelServer
 
 PRETRAINED_MODEL = 'bert-base-cased'
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
@@ -20,7 +20,6 @@ class BertSentimentClassifier(nn.Module):
         """
         :param input_ids:
         :param attention_mask:
-        :return:
         """
         _, pooled_out = self.bert(
             input_ids=input_ids,
@@ -31,14 +30,14 @@ class BertSentimentClassifier(nn.Module):
         return self.softmax(out)
 
 
-class SentimentClassifierServing(mlrun.serving.V2ModelServer):
-    def __init__(self):
+class SentimentClassifierServing(V2ModelServer):
+    def __init__(self, context, name: str, **class_args):
+        super().__init__(context, name, **class_args)
         self.model = self.load()
 
     def load(self):
         """
         load bert model into class
-        :return: model
         """
         model_file, _ = self.get_model('.pt')
         device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
@@ -51,7 +50,6 @@ class SentimentClassifierServing(mlrun.serving.V2ModelServer):
         """
         predict function
         :param body: set of inputs for bert model to predict from
-        :return: list of sentiment predictions
         """
         try:
             instances = body['inputs']

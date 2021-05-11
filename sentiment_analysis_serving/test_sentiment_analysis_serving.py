@@ -5,7 +5,7 @@ import os.path
 from os import path
 import mlrun
 from pygit2 import Repository
-
+from sentiment_analysis_serving import *
 
 MODEL_PATH = os.path.join(os.path.abspath('./'), 'models')
 MODEL = MODEL_PATH + "model.pt"
